@@ -106,7 +106,7 @@ body {
 			left: 50%;
 			width: 40px;
 			height: 40px;
-			border: 2px solid $primary-color;
+			border: 3px solid $primary-color;
 			transform: translateX(-50%) translateY(-50%) scale(0.8);
 			border-radius: 50%;
 			background: transparent;
@@ -114,10 +114,10 @@ body {
 			opacity: 0;
 			transition: all 0.3s;
 			z-index: -1;
-			&:after {
-				border-width: 1px;
-				transition: all 0.4s;
-			}
+		}
+		&:after {
+			border-width: 1px;
+			transition: all 0.4s;
 		}
 	}
 
@@ -366,7 +366,8 @@ input[type=text]:focus::-webkit-input-placeholder {
 .ba-tabs {
 	background-color: #f5f5f5;
 	padding: 140px 0 120px;
-	&__box {
+	&__link {
+		display: block;
 		width: 110px;
 		height: 110px;
 		background-color: #333333;
@@ -374,35 +375,44 @@ input[type=text]:focus::-webkit-input-placeholder {
 		position: relative;
 		cursor: pointer;
 		transition: .2s ease-in;
-	}
-	&__text {
-		position: absolute;
-		top: 40%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		font-family: $primary-font;
 		font-size: 15px;
 		font-weight: 700;
 		text-transform: uppercase;
 		color: $secondary-color;
+		outline: none;
 	}
-	&__box--active {
+	&__link--active {
 		background-color: $primary-color;
 		border-color: transparent;
-		border-radius: 5px 5px 0 0;
 	}
-	&__wrapper {
+	&__content {
 		display: inline-block;
 		margin: 0 95px;
 		width: 490px;
+		display: none;
+	}
+	&__wrapper {
+		display: inline-block;
+		margin: 0;
+		width: 550px;
+		height: 300px;
 	}
 }
 
-.ba-tabs__box--rounded {
+.ba-tabs__link--rounded-top {
+	border-radius: 5px 5px 0 0;
+}
+
+.ba-tabs__link--rounded-bottom {
 	border-radius: 0 0 5px 5px;
 }
 
-.ba-tabs__box:hover {
+.ba-tabs__content--active {
+	display: block;
+}
+
+.ba-tabs__link:hover {
 	background-color: $primary-color;
 }
 

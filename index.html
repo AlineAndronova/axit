@@ -25,23 +25,23 @@
  			<nav class="ba-navigation ba-right">
  				<ul class="ba-navigation__list">
  					<li class="ba-navigation__item">
- 						<a class="ba-navigation__link" href="#">Features</a>
+ 						<a class="ba-navigation__link" href="#features">Features</a>
  					</li>
 
  					<li class="ba-navigation__item">
- 						<a class="ba-navigation__link" href="#">About</a>
+ 						<a class="ba-navigation__link" href="#about">About</a>
  					</li>
 
  					<li class="ba-navigation__item">
- 						<a class="ba-navigation__link" href="#">Pricing</a>
+ 						<a class="ba-navigation__link" href="#pricing">Pricing</a>
  					</li>
 
  					<li class="ba-navigation__item">
- 						<a class="ba-navigation__link" href="#">Reviews</a>
+ 						<a class="ba-navigation__link" href="#reviews">Reviews</a>
  					</li>
 
  					<li class="ba-navigation__item">
- 						<a class="ba-navigation__link" href="#">Contact</a>
+ 						<a class="ba-navigation__link" href="#contact">Contact</a>
  					</li>
  				</ul>
  			</nav>
@@ -107,28 +107,38 @@
 		<!-- end of .ba-social -->
 		</section>
 
-		<section class="ba-tabs">
+		<section id="features" class="ba-tabs">
 
 			<div class="ba-container ba-clearfix">
 
-				<div class="ba-tabs__box-column ba-left">
-					<div class="ba-tabs__box ba-tabs__box--active">
-						<p class="ba-tabs__text">Tab 1</p>
-					</div>
-					<div class="ba-tabs__box">
-						<p class="ba-tabs__text">Tab 2</p>
-					</div>
-					<div class="ba-tabs__box ba-tabs__box--rounded">
-						<p class="ba-tabs__text">Tab 3</p>
-					</div>
+				<div class="ba-tabs__box ba-left">
+
+				  <button class="ba-tabs__link ba-tabs__link--active ba-tabs__link--rounded-top" data-tab="1">Tab 1</button>
+				  <button class="ba-tabs__link" data-tab="2">Tab 2</button>
+				  <button class="ba-tabs__link ba-tabs__link--rounded-bottom" data-tab="3">Tab 3</button>
+
 				</div>
+
 
 				<div class="ba-tabs__wrapper">
 
-					<h2 class="ba-section-title">Tabs with soft transitioning effect.</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
-					<a class="ba-button ba-button--orange ba-button--download" href="#">Download</a>
+					<div id="ba-tab-1" class="ba-tabs__content ba-tabs__content--active">
+				  		<h2 class="ba-section-title">Tabs with soft transitioning effect.</h2>
+				  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+				  		<a class="ba-button ba-button--orange ba-button--download" href="#">Download</a>
+					</div>
+
+					<div id="ba-tab-2" class="ba-tabs__content">
+				  		<h2 class="ba-section-title">Tab 2</h2>
+				  		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+					</div>
+
+					<div id="ba-tab-3" class="ba-tabs__content">
+				 		<h2 class="ba-section-title">Tab 3</h2>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</p>
+					</div>
 
 				</div>
 
@@ -198,7 +208,7 @@
 		<!-- end of .ba-standard -->
 		</section>
 
-		<section class="ba-awesome">
+		<section id="about" class="ba-awesome">
 
 			<div class="ba-container">
 
@@ -241,7 +251,7 @@
 		<!-- end of .ba-awesome -->
 		</section>
 
-		<section class="ba-pricing">
+		<section id="pricing" class="ba-pricing">
 
 			<div class="ba-container">
 
@@ -313,7 +323,7 @@
 		<!-- end of .ba-pricing -->
 		</section>
 
-		<section class="ba-testimonials">
+		<section id="reviews" class="ba-testimonials">
 
 			<div class="ba-container">
 
@@ -372,7 +382,7 @@
 		<!-- end of .ba-design -->
 		</section>
 
-		<section class="ba-contact">
+		<section id="contact" class="ba-contact">
 
 			<div class="ba-container">
 
@@ -419,6 +429,8 @@
  		<p class="ba-footer__text">	&#9400; 2015 Axure themes</p>
 
  	</footer>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
  	<script src="scripts/main.js"></script>
 </body>
 </html>
